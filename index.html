@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>黃薇芳｜品牌增長履歷</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Huninn&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  /* 色彩：鼠尾草白紙底、松綠墨色為主，萬壽菊黃只用在「成長」的地方 */
+  --paper: #F3F5F0;
+  --card: #FFFFFF;
+  --ink: #16262A;
+  --muted: #586A6C;
+  --line: #D7DED5;
+  --pine: #1F5149;
+  --pine-soft: #E1ECE7;
+  --marigold: #E39A2D;
+  --marigold-soft: #FBEBD2;
+  --font-display: "Huninn", "Noto Sans TC", "PingFang TC", sans-serif;
+  --font-body: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+  --font-num: "Bricolage Grotesque", "Noto Sans TC", sans-serif;
+  /* 版面：左側敘事、右側互動；每段一個可以「點」的東西 */
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #101A1C; --card: #172427; --ink: #E7EEEA; --muted: #9AACA9; --line: #2A393B;
+    --pine: #86C9B9; --pine-soft: #1D3633; --marigold: #F2B24E; --marigold-soft: #3A2E1A;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #101A1C; --card: #172427; --ink: #E7EEEA; --muted: #9AACA9; --line: #2A393B;
+  --pine: #86C9B9; --pine-soft: #1D3633; --marigold: #F2B24E; --marigold-soft: #3A2E1A;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body {
+  margin: 0; background: var(--paper); color: var(--ink);
+  font-family: var(--font-body); font-size: 16px; line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: var(--pine); }
+button { font: inherit; color: inherit; }
+:focus-visible { outline: 2.5px solid var(--marigold); outline-offset: 3px; border-radius: 6px; }
+
+.wrap { max-width: 1120px; margin: 0 auto; padding: 0 24px; }
+@media (max-width: 480px) { .wrap { padding: 0 16px; } }
+
+/* 導覽列 */
+.nav {
+  position: sticky; top: 0; z-index: 20;
+  background: color-mix(in srgb, var(--paper) 88%, transparent);
+  backdrop-filter: blur(10px); border-bottom: 1px solid var(--line);
+}
+.nav .wrap { display: flex; align-items: center; gap: 20px; height: 58px; }
+.brand { font-family: var(--font-display); font-size: 19px; text-decoration: none; color: var(--ink); white-space: nowrap; }
+.nav ul { display: flex; gap: 4px; list-style: none; margin: 0 0 0 auto; padding: 0; }
+.nav ul a { display: block; padding: 6px 12px; border-radius: 999px; text-decoration: none; color: var(--muted); font-size: 14px; }
+.nav ul a:hover, .nav ul a.on { background: var(--pine-soft); color: var(--pine); }
+.btn {
+  display: inline-flex; align-items: center; gap: 8px; cursor: pointer;
+  border: 1.5px solid var(--ink); background: var(--ink); color: var(--paper);
+  padding: 8px 16px; border-radius: 999px; font-size: 14px; font-weight: 500; text-decoration: none;
+  transition: transform .15s ease;
+}
+.btn:hover { transform: translateY(-1px); }
+.btn.ghost { background: transparent; color: var(--ink); }
+@media (max-width: 820px) { .nav ul { display: none; } .nav .btn { margin-left: auto; } }
+
+/* 開場 */
+.hero { padding: 64px 0 40px; }
+.hero .wrap.top { display: grid; grid-template-columns: 1.15fr .85fr; gap: 48px; align-items: center; }
+@media (max-width: 880px) { .hero .wrap.top { grid-template-columns: 1fr; gap: 24px; } .hero { padding-top: 36px; } }
+.apply {
+  display: inline-flex; gap: 10px; align-items: center; font-size: 14px; color: var(--pine);
+  background: var(--pine-soft); padding: 5px 14px; border-radius: 999px; font-weight: 500;
+}
+.apply i { width: 8px; height: 8px; border-radius: 50%; background: var(--marigold); display: inline-block; }
+h1 {
+  font-family: var(--font-display); font-weight: 400; font-size: clamp(34px, 5.4vw, 60px);
+  line-height: 1.22; margin: 20px 0 18px; text-wrap: balance; letter-spacing: .5px;
+}
+h1 mark { background: linear-gradient(transparent 62%, var(--marigold-soft) 62%); color: inherit; padding: 0 2px; }
+.who { font-size: 18px; margin: 0 0 6px; font-weight: 700; }
+.who span { font-family: var(--font-num); font-weight: 700; letter-spacing: 1px; color: var(--muted); font-size: 15px; margin-left: 8px; }
+.lede { color: var(--muted); max-width: 34em; margin: 0 0 26px; }
+.cta { display: flex; gap: 10px; flex-wrap: wrap; }
+
+/* 回饋循環圖 */
+.loop { position: relative; }
+.loop svg { width: 100%; height: auto; display: block; overflow: visible; }
+.loop .ring { fill: none; stroke: var(--line); stroke-width: 2; stroke-dasharray: 3 7; }
+.loop .node { cursor: pointer; }
+.loop .node circle.hit { fill: transparent; }
+.loop .node circle.dot { fill: var(--card); stroke: var(--pine); stroke-width: 2.5; transition: r .2s ease, fill .2s ease; }
+.loop .node:hover circle.dot, .loop .node:focus-visible circle.dot { fill: var(--marigold); stroke: var(--marigold); }
+.loop .node text { font-family: var(--font-body); font-size: 15px; fill: var(--ink); font-weight: 500; }
+.loop .node text.n { font-family: var(--font-num); font-size: 11px; fill: var(--muted); font-weight: 700; }
+.loop .center1 { font-family: var(--font-display); font-size: 22px; fill: var(--ink); }
+.loop .center2 { font-family: var(--font-body); font-size: 12.5px; fill: var(--muted); }
+.loop .runner { fill: var(--marigold); }
+.loop .hint { text-align: center; font-size: 13px; color: var(--muted); margin-top: 4px; }
+
+/* 數字條 */
+.stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 18px; overflow: hidden; margin-top: 44px; }
+@media (max-width: 720px) { .stats { grid-template-columns: repeat(2, 1fr); } }
+.stat { background: var(--card); padding: 20px 22px; }
+.stat b { display: block; white-space: nowrap; font-family: var(--font-num); font-weight: 800; font-size: 38px; line-height: 1.1; font-variant-numeric: tabular-nums; }
+.stat b small { font-size: 18px; font-weight: 700; margin-left: 2px; }
+.stat span { font-size: 13.5px; color: var(--muted); line-height: 1.5; display: block; margin-top: 6px; }
+
+/* 段落通用 */
+section.block { padding: 72px 0 24px; scroll-margin-top: 60px; }
+.eyebrow { font-family: var(--font-num); font-weight: 700; font-size: 13px; letter-spacing: 2px; color: var(--marigold); text-transform: uppercase; }
+h2 { font-family: var(--font-display); font-weight: 400; font-size: clamp(26px, 3.4vw, 36px); line-height: 1.3; margin: 8px 0 10px; text-wrap: balance; }
+.intro { color: var(--muted); max-width: 40em; margin: 0 0 30px; }
+
+/* 證據等級標籤 */
+.lv { display: inline-flex; align-items: center; gap: 6px; font-size: 12.5px; font-weight: 500; padding: 2px 10px; border-radius: 999px; white-space: nowrap; border: 1.5px solid transparent; line-height: 1.6; }
+.lv::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: currentColor; }
+.lv[data-lv="ops"]   { background: var(--pine); color: var(--paper); }
+.lv[data-lv="ops"]::before { background: var(--marigold); }
+.lv[data-lv="intern"]{ background: var(--pine-soft); color: var(--pine); }
+.lv[data-lv="team"]  { background: var(--marigold-soft); color: var(--ink); }
+.lv[data-lv="team"]::before { background: var(--marigold); }
+.lv[data-lv="acad"]  { background: transparent; color: var(--muted); border-color: var(--line); }
+.lv[data-lv="learn"] { background: transparent; color: var(--muted); border: 1.5px dashed var(--muted); }
+
+/* 職務對照 */
+.legend { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 22px; font-size: 13.5px; color: var(--muted); }
+.legend button { background: none; border: 0; padding: 0; cursor: pointer; border-radius: 999px; }
+.legend button[aria-pressed="false"] .lv { opacity: .35; }
+.fit { display: grid; grid-template-columns: 300px 1fr; gap: 28px; align-items: start; }
+@media (max-width: 860px) { .fit { grid-template-columns: 1fr; } }
+.duties { display: flex; flex-direction: column; gap: 8px; }
+@media (max-width: 860px) { .duties { flex-direction: row; overflow-x: auto; padding-bottom: 6px; } }
+.duty {
+  text-align: left; cursor: pointer; border: 1.5px solid var(--line); background: var(--card);
+  border-radius: 14px; padding: 14px 16px; display: grid; grid-template-columns: 26px 1fr; gap: 4px 10px;
+  transition: border-color .15s ease, transform .15s ease;
+}
+@media (max-width: 860px) { .duty { min-width: 220px; } }
+.duty:hover { transform: translateX(3px); }
+.duty .k { font-family: var(--font-num); font-weight: 800; color: var(--muted); font-size: 15px; }
+.duty .t { font-weight: 700; font-size: 15.5px; line-height: 1.45; }
+.duty .s { grid-column: 2; font-size: 12.5px; color: var(--muted); line-height: 1.5; }
+.duty[aria-selected="true"] { border-color: var(--pine); background: var(--pine-soft); }
+.duty[aria-selected="true"] .k { color: var(--marigold); }
+.panel { background: var(--card); border: 1px solid var(--line); border-radius: 20px; padding: 26px 28px; min-height: 420px; }
+@media (max-width: 480px) { .panel { padding: 20px 18px; } }
+.panel h3 { margin: 0 0 4px; font-size: 20px; }
+.panel .jd { color: var(--muted); font-size: 14px; margin: 0 0 18px; }
+.ev { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.ev li { display: grid; grid-template-columns: 1fr auto; gap: 4px 14px; padding: 14px 16px; border-radius: 12px; border: 1px solid var(--line); transition: opacity .2s ease; }
+.ev li.dim { opacity: .28; }
+.ev .src { font-size: 12.5px; color: var(--muted); font-weight: 500; }
+.ev .txt { grid-column: 1 / -1; font-size: 15px; line-height: 1.65; }
+.bring { margin-top: 18px; display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+@media (max-width: 600px) { .bring { grid-template-columns: 1fr; } }
+.bring div { border-radius: 12px; padding: 12px 16px; font-size: 14px; line-height: 1.65; }
+.bring .yes { background: var(--pine-soft); }
+.bring .gap { background: var(--marigold-soft); }
+.bring b { display: block; font-size: 12.5px; letter-spacing: 1px; margin-bottom: 2px; }
+.jdnote { font-size: 12.5px; color: var(--muted); margin-top: 14px; }
+
+/* 營運流程 */
+.flow { background: var(--card); border: 1px solid var(--line); border-radius: 24px; padding: 28px; }
+@media (max-width: 480px) { .flow { padding: 20px 16px; } }
+.steps { display: grid; grid-template-columns: repeat(5, 1fr); gap: 0; position: relative; margin-bottom: 26px; }
+.steps::before { content: ""; position: absolute; left: 10%; right: 10%; top: 21px; height: 2px; background: var(--line); }
+.steps .bar { position: absolute; left: 10%; top: 21px; height: 2px; background: var(--marigold); transition: width .35s ease; }
+@media (prefers-reduced-motion: reduce) { .steps .bar { transition: none; } }
+.step { position: relative; background: none; border: 0; cursor: pointer; padding: 0 4px; display: flex; flex-direction: column; align-items: center; gap: 8px; text-align: center; }
+.step .c {
+  width: 44px; height: 44px; border-radius: 50%; display: grid; place-items: center;
+  background: var(--card); border: 2px solid var(--line); font-family: var(--font-num); font-weight: 800; font-size: 16px; color: var(--muted);
+  transition: all .2s ease;
+}
+.step .l { font-size: 14px; font-weight: 500; line-height: 1.4; }
+.step.done .c { border-color: var(--marigold); color: var(--ink); }
+.step[aria-selected="true"] .c { background: var(--marigold); border-color: var(--marigold); color: #16262A; transform: scale(1.08); }
+@media (max-width: 600px) { .step .l { font-size: 12px; } .step .c { width: 38px; height: 38px; } .steps::before, .steps .bar { top: 18px; } }
+.stepbody { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+@media (max-width: 760px) { .stepbody { grid-template-columns: 1fr; gap: 16px; } }
+.stepbody h3 { font-family: var(--font-display); font-weight: 400; font-size: 26px; margin: 0 0 8px; line-height: 1.35; }
+.stepbody .q { color: var(--muted); margin: 0; }
+.stepbody ul { margin: 0; padding-left: 20px; }
+.stepbody li { margin-bottom: 8px; }
+.stepbody li::marker { color: var(--marigold); }
+.flowfoot { display: flex; justify-content: flex-end; align-items: center; gap: 14px; flex-wrap: wrap; margin-top: 22px; padding-top: 18px; border-top: 1px dashed var(--line); }
+.flowfoot p { margin: 0; font-size: 13.5px; color: var(--muted); max-width: 46em; }
+.navbtns { display: flex; gap: 8px; }
+
+/* 提案案例 */
+.case { display: grid; grid-template-columns: .9fr 1.1fr; gap: 28px; align-items: start; }
+@media (max-width: 860px) { .case { grid-template-columns: 1fr; } }
+.casehead { background: var(--pine); color: var(--paper); border-radius: 24px; padding: 28px; }
+.casehead .eyebrow { color: var(--marigold); }
+.casehead h3 { font-family: var(--font-display); font-weight: 400; font-size: 26px; margin: 8px 0 12px; line-height: 1.35; }
+.casehead p { margin: 0 0 14px; opacity: .88; font-size: 15px; }
+.persona { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 16px; }
+.persona div { border: 1px solid color-mix(in srgb, var(--paper) 30%, transparent); border-radius: 12px; padding: 10px 12px; font-size: 13.5px; line-height: 1.5; }
+.persona b { display: block; color: var(--marigold); font-size: 12px; letter-spacing: 1px; }
+.seg { display: inline-flex; background: var(--card); border: 1px solid var(--line); border-radius: 999px; padding: 4px; margin-bottom: 16px; flex-wrap: wrap; }
+.seg button { border: 0; background: none; padding: 7px 16px; border-radius: 999px; cursor: pointer; font-size: 14px; font-weight: 500; color: var(--muted); }
+.seg button[aria-selected="true"] { background: var(--ink); color: var(--paper); }
+.phase { background: var(--card); border: 1px solid var(--line); border-radius: 20px; padding: 22px 24px; }
+.phase h4 { margin: 0 0 10px; font-size: 17px; }
+.phase ul { margin: 0; padding-left: 20px; }
+.phase li { margin-bottom: 6px; }
+.phase li::marker { color: var(--marigold); }
+.phase .role { margin-top: 14px; font-size: 13.5px; color: var(--muted); border-top: 1px dashed var(--line); padding-top: 12px; }
+
+/* 經歷時間軸 */
+.tl { display: grid; gap: 14px; }
+.tli { display: grid; grid-template-columns: 150px 1fr; gap: 20px; padding: 20px 22px; background: var(--card); border: 1px solid var(--line); border-radius: 18px; }
+@media (max-width: 640px) { .tli { grid-template-columns: 1fr; gap: 6px; } }
+.tli time { font-family: var(--font-num); font-weight: 700; font-size: 14px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.tli h3 { margin: 0; font-size: 17px; }
+.tli h3 span { font-weight: 400; color: var(--muted); font-size: 14.5px; margin-left: 6px; }
+.tli p { margin: 6px 0 0; font-size: 15px; color: var(--ink); }
+.tli .tags { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 10px; }
+.tag { font-size: 12.5px; padding: 2px 10px; border-radius: 999px; background: var(--paper); border: 1px solid var(--line); color: var(--muted); }
+
+/* 誠實的差距 */
+.honest { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 14px; }
+@media (max-width: 860px) { .honest { grid-template-columns: 1fr; } }
+.hcol { border-radius: 20px; padding: 22px 24px; }
+.hcol h3 { margin: 0 0 12px; font-size: 16px; display: flex; align-items: center; gap: 8px; }
+.hcol ul { margin: 0; padding-left: 18px; font-size: 15px; }
+.hcol li { margin-bottom: 8px; }
+.hcol.a { background: var(--card); border: 1px solid var(--line); }
+.hcol.b { background: var(--marigold-soft); }
+.hcol.c { background: var(--pine-soft); }
+
+/* 聯絡 */
+.contact { margin: 80px 0 40px; background: var(--ink); color: var(--paper); border-radius: 28px; padding: 44px 40px; display: grid; grid-template-columns: 1.2fr 1fr; gap: 30px; align-items: center; }
+@media (max-width: 760px) { .contact { grid-template-columns: 1fr; padding: 32px 22px; } }
+.contact h2 { margin: 0 0 10px; }
+.contact p { margin: 0; opacity: .8; }
+.clist { display: grid; gap: 10px; }
+.crow { display: flex; align-items: center; justify-content: space-between; gap: 12px; border: 1px solid color-mix(in srgb, var(--paper) 25%, transparent); border-radius: 14px; padding: 10px 12px 10px 16px; }
+.crow .v { font-family: var(--font-num); font-size: 15px; word-break: break-all; }
+.crow .v small { display: block; font-family: var(--font-body); font-size: 12px; opacity: .65; }
+.crow a { color: var(--paper); }
+.copy { cursor: pointer; border: 0; background: var(--marigold); color: #16262A; border-radius: 999px; padding: 6px 14px; font-size: 13px; font-weight: 700; white-space: nowrap; }
+footer { text-align: center; font-size: 12.5px; color: var(--muted); padding: 0 0 40px; }
+
+.toast { position: fixed; left: 50%; bottom: 24px; transform: translate(-50%, 20px); background: var(--ink); color: var(--paper); padding: 10px 18px; border-radius: 999px; font-size: 14px; opacity: 0; pointer-events: none; transition: all .25s ease; z-index: 50; }
+.toast.show { opacity: 1; transform: translate(-50%, 0); }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+</style>
+</head>
+<body>
+
+<nav class="nav" aria-label="頁面導覽">
+  <div class="wrap">
+    <a class="brand" href="#top">黃薇芳</a>
+    <ul>
+      <li><a href="#fit">職務對照</a></li>
+      <li><a href="#flow">營運實作</a></li>
+      <li><a href="#case">提案案例</a></li>
+      <li><a href="#path">經歷</a></li>
+      <li><a href="#honest">補強計畫</a></li>
+    </ul>
+    <a class="btn" href="#contact">聯絡我</a>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap top">
+    <div>
+      <span class="apply"><i></i>應徵：牧羊人集團｜儲備品牌增長經理（台北）</span>
+      <h1>以消費者洞察，<br>推動<mark>品牌持續成長</mark></h1>
+      <p class="who">黃薇芳<span>WEI-FANG HUANG</span></p>
+      <p class="lede">完成倫敦國王學院國際關係碩士課程。自己經營跨境選品 Sweetsour，用社群貼文的反應測試選品定位，再依顧客回饋調整服務流程；也在團隊商業競賽中，以問卷分析支撐電商平台改善提案。希望將「從消費者洞察出發、以數據驗證、在執行中持續優化」的工作方式，帶入品牌增長工作。</p>
+      <div class="cta">
+        <a class="btn" href="#fit">看我和職務的對照</a>
+        <a class="btn ghost" href="#flow">看我怎麼做</a>
+      </div>
+    </div>
+
+    <div class="loop">
+      <svg viewBox="-50 -6 420 336" role="group" aria-label="我的顧客回饋循環，點選任一步驟看實作細節">
+        <path id="ringpath" class="ring" d="M160,42 A118,118 0 1,1 159.99,42 Z"></path>
+        <circle class="runner" r="6">
+          <animateMotion dur="9s" repeatCount="indefinite" rotate="auto"><mpath href="#ringpath"></mpath></animateMotion>
+        </circle>
+        <text class="center1" x="160" y="158" text-anchor="middle">顧客回饋循環</text>
+        <text class="center2" x="160" y="182" text-anchor="middle">Sweetsour 的日常運作方式</text>
+
+        <g class="node" tabindex="0" role="button" data-step="0" aria-label="步驟一 觀察偏好">
+          <circle class="hit" cx="160" cy="42" r="26"></circle><circle class="dot" cx="160" cy="42" r="10"></circle>
+          <text class="n" x="160" y="14" text-anchor="middle">01</text>
+          <text x="182" y="36">觀察偏好</text>
+        </g>
+        <g class="node" tabindex="0" role="button" data-step="1" aria-label="步驟二 調整選品">
+          <circle class="hit" cx="272" cy="124" r="26"></circle><circle class="dot" cx="272" cy="124" r="10"></circle>
+          <text class="n" x="292" y="112">02</text>
+          <text x="292" y="132">調整選品</text>
+        </g>
+        <g class="node" tabindex="0" role="button" data-step="2" aria-label="步驟三 內容與社群">
+          <circle class="hit" cx="229" cy="255" r="26"></circle><circle class="dot" cx="229" cy="255" r="10"></circle>
+          <text class="n" x="250" y="262">03</text>
+          <text x="229" y="292" text-anchor="middle">內容與社群</text>
+        </g>
+        <g class="node" tabindex="0" role="button" data-step="3" aria-label="步驟四 訂購與履約">
+          <circle class="hit" cx="91" cy="255" r="26"></circle><circle class="dot" cx="91" cy="255" r="10"></circle>
+          <text class="n" x="56" y="262">04</text>
+          <text x="91" y="292" text-anchor="middle">訂購與履約</text>
+        </g>
+        <g class="node" tabindex="0" role="button" data-step="4" aria-label="步驟五 回饋與改善">
+          <circle class="hit" cx="48" cy="124" r="26"></circle><circle class="dot" cx="48" cy="124" r="10"></circle>
+          <text class="n" x="28" y="112" text-anchor="end">05</text>
+          <text x="28" y="132" text-anchor="end">回饋與改善</text>
+        </g>
+      </svg>
+      <p class="hint">點任一個節點，跳到那一步的實作細節</p>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="stats">
+      <div class="stat"><b>300<small>+</small></b><span>人的 LINE 社群，<br>由我自己經營互動</span></div>
+      <div class="stat"><b>121</b><span>份有效問卷，<br>參與設計與分析</span></div>
+      <div class="stat"><b>第 3 名</b><span>統一企業商業競賽<br>電商創新組（團隊）</span></div>
+      <div class="stat"><b>7.5</b><span>IELTS Academic 總分，<br>可用英文工作溝通</span></div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="block" id="fit">
+    <div class="wrap">
+      <div class="eyebrow">01 · Role fit</div>
+      <h2>職務重點與經驗對照</h2>
+      <p class="intro">依品牌增長經理的五項職務重點，逐項對照相關經歷，並標示經驗來源，區分實際經營、實習、團隊專案、學術訓練與進修中的能力。點選上方標籤可篩選。</p>
+
+      <div class="legend" role="group" aria-label="依經驗類型篩選">
+        <span>篩選：</span>
+        <button type="button" aria-pressed="true" data-f="ops"><span class="lv" data-lv="ops">實際經營</span></button>
+        <button type="button" aria-pressed="true" data-f="intern"><span class="lv" data-lv="intern">實習</span></button>
+        <button type="button" aria-pressed="true" data-f="team"><span class="lv" data-lv="team">團隊專案</span></button>
+        <button type="button" aria-pressed="true" data-f="acad"><span class="lv" data-lv="acad">學術訓練</span></button>
+        <button type="button" aria-pressed="true" data-f="learn"><span class="lv" data-lv="learn">學習中</span></button>
+      </div>
+
+      <div class="fit">
+        <div class="duties" role="tablist" aria-label="職務內容" id="duties"></div>
+        <div class="panel" role="tabpanel" id="panel" aria-live="polite"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="flow">
+    <div class="wrap">
+      <div class="eyebrow">02 · How I work</div>
+      <h2>Sweetsour：從消費者洞察到訂單履約</h2>
+      <p class="intro">Sweetsour 是我 2025 年 8 月開始經營的跨境選品與代購，規模小，但從選品、內容、訂單到售後都由我負責。用方向鍵或下方按鈕逐步看。</p>
+
+      <div class="flow">
+        <div class="steps" role="tablist" aria-label="營運流程步驟" id="steps"><div class="bar" id="bar"></div></div>
+        <div class="stepbody" role="tabpanel" id="stepbody" aria-live="polite"></div>
+        <div class="flowfoot">
+          <div class="navbtns">
+            <button class="btn ghost" type="button" id="prev">上一步</button>
+            <button class="btn" type="button" id="next">下一步</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="case">
+    <div class="wrap">
+      <div class="eyebrow">03 · Case</div>
+      <h2>從問卷到提案：iOPEN Mall 改善方案</h2>
+      <p class="intro">2024 年統一企業暨關係企業商業競賽，團隊獲電商創新組第三名。切換時程，看我們提出的方案與我負責的部分。</p>
+
+      <div class="case">
+        <div class="casehead">
+          <div class="eyebrow">起點是使用者</div>
+          <h3>初次使用者為什麼沒有留下來？</h3>
+          <p>我參與問卷設計，並分析 121 份有效問卷。團隊再用同理心地圖，把初次使用者卡住的地方整理成四類，作為提案依據。</p>
+          <div class="persona">
+            <div><b>平台操作</b>選購流程不夠直覺</div>
+            <div><b>物流</b>想知道貨到哪裡了</div>
+            <div><b>客服</b>問題要能快速得到回應</div>
+            <div><b>使用誘因</b>缺少回訪的理由</div>
+          </div>
+        </div>
+        <div>
+          <div class="seg" role="tablist" aria-label="提案時程" id="seg">
+            <button type="button" role="tab" aria-selected="true" data-p="0">短期</button>
+            <button type="button" role="tab" aria-selected="false" data-p="1">中期</button>
+            <button type="button" role="tab" aria-selected="false" data-p="2">長期</button>
+            <button type="button" role="tab" aria-selected="false" data-p="3">行銷配套</button>
+          </div>
+          <div class="phase" role="tabpanel" id="phase" aria-live="polite"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="path">
+    <div class="wrap">
+      <div class="eyebrow">04 · Path</div>
+      <h2>經歷與學歷</h2>
+      <div class="tl">
+        <article class="tli">
+          <time>2025.08 – 至今</time>
+          <div>
+            <h3>Sweetsour<span>創辦與營運｜小規模跨境選品電商及代購</span></h3>
+            <p>從零建立初期網站與訂購流程，負責海外採購、定價、金物流、社群經營與顧客服務。彙整顧客常見疑問，改善訂購服務流程與客服回覆方式；運用 GPT 與 Claude 協作建立庫存、成本與獲利管理工具。</p>
+            <div class="tags"><span class="tag">選品</span><span class="tag">社群經營</span><span class="tag">顧客服務</span><span class="tag">成本與毛利</span></div>
+          </div>
+        </article>
+        <article class="tli">
+          <time>2025.09 – 2026.09</time>
+          <div>
+            <h3>倫敦國王學院 King's College London<span>國際關係碩士課程</span></h3>
+            <p>已通過全部學業要求，正式學位授予與最終成績單待核發。訓練重點在中英文資料蒐整、比較分析、質性研究與來源評估。在倫敦生活一年，習慣跨文化的團隊合作。</p>
+            <div class="tags"><span class="tag">研究分析</span><span class="tag">英文工作環境</span><span class="tag">跨文化協作</span></div>
+          </div>
+        </article>
+        <article class="tli">
+          <time>2024.07 – 2025.07</time>
+          <div>
+            <h3>學術交流基金會 Fulbright Taiwan<span>實習生</span></h3>
+            <p>協助計畫職員籌備學人迎新與外交部參訪，負責行政支援、現場接待與動線引導；回應美籍學人在台的日常詢問；參與中英文宣傳文案與視覺素材的製作及翻譯。</p>
+            <div class="tags"><span class="tag">活動執行</span><span class="tag">英語溝通</span><span class="tag">雙語文案</span></div>
+          </div>
+        </article>
+        <article class="tli">
+          <time>2021.09 – 2025.06</time>
+          <div>
+            <h3>國立中正大學<span>政治學學士</span></h3>
+            <p>主修公共行政組、輔修國際關係組；2025 年 4 月獲頒校長獎。</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="honest">
+    <div class="wrap">
+      <div class="eyebrow">05 · Honest gaps</div>
+      <h2>能力缺口與補強計畫</h2>
+      <p class="intro">儲備職的意義是培養。與其把小規模的經驗講大，我更想清楚說明自己目前在哪裡。</p>
+      <div class="honest">
+        <div class="hcol a">
+          <h3>目前還沒有</h3>
+          <ul>
+            <li>品牌從 0 到 1 的操盤經驗</li>
+            <li>數位廣告投放與預算管理實務</li>
+            <li>海外市場拓展的實際經驗</li>
+            <li>帶領團隊的管理經驗</li>
+          </ul>
+        </div>
+        <div class="hcol b">
+          <h3>正在補強</h3>
+          <ul>
+            <li>Google Ads 認證課程（進行中）</li>
+            <li>Microsoft Learn Power BI 課程（進行中）</li>
+            <li>持續用 Sweetsour 的社群貼文測試選品方向，練習看數據做決定</li>
+          </ul>
+        </div>
+        <div class="hcol c">
+          <h3>可以帶進團隊的</h3>
+          <ul>
+            <li>從顧客回饋找問題、再落實到流程的習慣</li>
+            <li>中英雙語的研究與溝通能力，能協助整理海外市場資料</li>
+            <li>一個人處理過採購、定價、出貨與客服的全流程，熟悉各環節如何互相影響</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <section class="contact" id="contact" aria-label="聯絡方式">
+      <div>
+        <h2>謝謝你看到這裡</h2>
+        <p>如果這份經歷符合你們對儲備品牌增長經理的期待，很希望有機會當面聊聊。</p>
+      </div>
+      <div class="clist">
+        <div class="crow"><div class="v"><small>Email</small>vanessa25314@gmail.com</div><button class="copy" type="button" data-copy="vanessa25314@gmail.com">複製</button></div>
+        <div class="crow"><div class="v"><small>電話</small>0979-630-312</div><button class="copy" type="button" data-copy="0979630312">複製</button></div>
+        <div class="crow"><div class="v"><small>LinkedIn</small><a href="https://www.linkedin.com/in/wei-fang-huang-72b798423" target="_blank" rel="noopener">wei-fang-huang-72b798423</a></div><button class="copy" type="button" data-copy="https://www.linkedin.com/in/wei-fang-huang-72b798423">複製</button></div>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer>黃薇芳 Wei-Fang Huang · 台北市 · 2026</footer>
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+(function () {
+  const LV = { ops: "實際經營", intern: "實習", team: "團隊專案", acad: "學術訓練", learn: "學習中" };
+
+  const duties = [
+    {
+      t: "市場洞察與成長策略", s: "從顧客與市場找出成長機會",
+      jd: "職務重點：基於市場洞察與品牌目標，規劃成長方向。",
+      ev: [
+        { lv: "ops", src: "Sweetsour", txt: "用 Instagram、Threads 貼文的觸及、回覆、詢問與收藏比例，測試哪些商品類型最受關注，據此決定選品定位。" },
+        { lv: "team", src: "iOPEN Mall 提案", txt: "參與問卷設計與 121 份有效問卷分析；團隊以同理心地圖歸納初次使用者在操作、物流、客服與使用誘因上的需求。" },
+        { lv: "acad", src: "KCL 碩士課程", txt: "中英文資料蒐整、比較分析、質性研究與來源評估的訓練，習慣先查證再下結論。" }
+      ],
+      yes: "把顧客反應整理成可以拿來做決定的依據。",
+      gap: "還沒有在品牌層級制定成長策略的經驗。"
+    },
+    {
+      t: "市場與通路機會", s: "社群、電商與實體通路",
+      jd: "職務重點：探索新市場與通路的成長潛力，規劃滲透與拓展。",
+      ev: [
+        { lv: "ops", src: "Sweetsour", txt: "經營 LINE、Instagram 與 Threads，LINE 社群逾 300 人；新客主要來自社群與朋友推薦，並累積了回購客。" },
+        { lv: "ops", src: "Sweetsour", txt: "自建初期網站後，改用電商平台經營；也以賣家與買家兩種身分使用過蝦皮，了解平台兩端的體驗。" },
+        { lv: "team", src: "iOPEN Mall 提案", txt: "團隊規劃 KOL 與既有賣家導流、7-ELEVEN 門市專區、OPEN POINT 整合等線上線下串聯方案。" }
+      ],
+      yes: "熟悉小規模社群與電商通路的實際運作。",
+      gap: "尚未負責過大型通路或新市場的開發。"
+    },
+    {
+      t: "專案規劃與執行", s: "從計畫到落地",
+      jd: "職務重點：從整合行銷、數位到線下活動，推動專案執行並交出成效。",
+      ev: [
+        { lv: "ops", src: "Sweetsour", txt: "從零建立網站、商品頁與訂購流程；負責海外採購、定價、金物流、預購與出貨追蹤。" },
+        { lv: "intern", src: "Fulbright Taiwan", txt: "協助計畫職員籌備學人迎新與外交部參訪，負責行政支援、現場接待與動線引導，配合團隊完成活動。" },
+        { lv: "team", src: "iOPEN Mall 提案", txt: "方案納入短、中、長期實施時程與成本效益試算，形成完整的競賽提案。" }
+      ],
+      yes: "能把一件事從規劃一路跟到交付。",
+      gap: "整合行銷（IMC）專案還需要在實戰中學習。"
+    },
+    {
+      t: "數據分析與策略調整", s: "看數字，再修正做法",
+      jd: "職務重點：以數據追蹤成效，即時調整策略並持續優化。",
+      ev: [
+        { lv: "ops", src: "Sweetsour", txt: "運用 GPT 與 Claude 協作建立庫存、成本與獲利管理工具，核對計算結果並調整功能，用來追蹤報價與毛利。" },
+        { lv: "ops", src: "Sweetsour", txt: "處理報價異動後，新增價格二次核對流程，降低同樣問題再次發生的風險。" },
+        { lv: "acad", src: "研究訓練", txt: "使用 SPSS 進行描述統計與基礎群組比較；熟悉 Excel 資料整理。" },
+        { lv: "learn", src: "進修中", txt: "Google Ads 認證課程與 Microsoft Learn Power BI 課程，補強廣告成效與儀表板分析。" }
+      ],
+      yes: "願意把每個決定和數字連起來，並主動補工具能力。",
+      gap: "廣告投放數據的實務判讀還在起步。"
+    },
+    {
+      t: "品牌國際化", s: "港澳、東南亞、歐美市場",
+      jd: "職務重點：參與品牌國際化，評估海外市場的成長機會。",
+      ev: [
+        { lv: "acad", src: "倫敦一年", txt: "在倫敦完成碩士課程，IELTS Academic 7.5，能以英文進行研究、簡報與日常工作溝通。" },
+        { lv: "ops", src: "Sweetsour", txt: "向歐洲與美洲為主的來源採購，熟悉跨境商品的報價、交期與物流溝通。" },
+        { lv: "intern", src: "Fulbright Taiwan", txt: "回應美籍學人在台的日常詢問與實務需求，參與中英文宣傳文案翻譯。" }
+      ],
+      yes: "語言能力與跨境作業的基礎，可以協助整理海外市場資料。",
+      gap: "沒有海外市場拓展的實際經驗，這是我最想在這個職位學的。"
+    }
+  ];
+
+  const steps = [
+    { l: "觀察偏好", h: "先看顧客對什麼有反應", q: "我想知道：大家真正會停下來看、會問、會收藏的是什麼？",
+      li: ["比較 Instagram、Threads 貼文的觸及、回覆、詢問與收藏比例，找出反應最好的商品類型", "在 LINE 社群的日常互動中，蒐集顧客對商品和價格帶的想法", "把觀察到的偏好整理下來，作為下一批選品的參考"] },
+    { l: "調整選品", h: "依偏好與定位決定賣什麼", q: "不是什麼紅就賣什麼，而是什麼適合 Sweetsour 的客群。",
+      li: ["依顧客需求與 Sweetsour 的定位決定選品方向", "貨源以歐洲、美洲為主，偶爾少量來自亞洲", "同時規劃預購與現貨，平衡備貨風險與出貨速度"] },
+    { l: "內容與社群", h: "把商品講清楚，讓人想問", q: "內容的任務是讓顧客快速理解商品，並且敢下單。",
+      li: ["撰寫商品介紹與預購公告，經營 LINE、Instagram、Threads 三個渠道", "LINE 社群累積逾 300 人，透過日常互動維持關係", "新客主要來自社群與朋友推薦，並累積了一群回購客"] },
+    { l: "訂購與履約", h: "讓下單到收貨這段不出錯", q: "顧客看不到後台，但每一個環節都會影響他會不會再回來。",
+      li: ["從零建立初期網站、商品頁與訂購流程，之後轉用電商平台經營", "負責海外採購、定價、金物流，追蹤預購與出貨進度", "處理報價異動後新增價格二次核對流程，降低重複出錯的風險"] },
+    { l: "回饋與改善", h: "把問題變成流程上的改善", q: "同一個問題被問第三次，就代表流程該改了。",
+      li: ["彙整顧客對商品、訂購方式與交期的常見疑問", "據此改善訂購服務流程與客服回覆方式，並追蹤收貨體驗", "運用 GPT 與 Claude 協作建立庫存、成本與獲利管理工具，支援採購、報價及毛利追蹤"] }
+  ];
+
+  const phases = [
+    { h: "短期：先把購物體驗順過來", li: ["優化選購流程，降低初次使用者的操作門檻"], role: "我的角色：參與問卷設計與分析，提供使用者痛點作為方案依據。" },
+    { h: "中期：補上物流的可見度", li: ["導入物流追蹤", "提供集貨服務，串聯 7-ELEVEN 門市資源"], role: "我的角色：與團隊討論方案，連結問卷中的物流需求。" },
+    { h: "長期：給顧客回來的理由", li: ["建立分級訂閱制，提高回訪與留存"], role: "我的角色：參與方案發想與提案整理。" },
+    { h: "行銷配套：讓第一批人走進來", li: ["KOL 與既有賣家導流", "門市專區曝光", "OPEN POINT 會員整合", "訂閱試用方案", "納入實施時程與成本效益試算"], role: "以上為團隊共同規劃，獲電商創新組第三名（團隊獎項）。" }
+  ];
+
+  // ---------- 職務對照 ----------
+  const dutiesEl = document.getElementById("duties");
+  const panel = document.getElementById("panel");
+  const active = new Set(Object.keys(LV));
+  let cur = 0;
+
+  duties.forEach((d, i) => {
+    const b = document.createElement("button");
+    b.type = "button"; b.className = "duty"; b.setAttribute("role", "tab"); b.id = "duty-" + i;
+    b.innerHTML = '<span class="k">0' + (i + 1) + '</span><span class="t">' + d.t + '</span><span class="s">' + d.s + '</span>';
+    b.addEventListener("click", () => selectDuty(i));
+    b.addEventListener("keydown", e => {
+      if (["ArrowDown", "ArrowRight"].includes(e.key)) { e.preventDefault(); selectDuty((i + 1) % duties.length, true); }
+      if (["ArrowUp", "ArrowLeft"].includes(e.key)) { e.preventDefault(); selectDuty((i - 1 + duties.length) % duties.length, true); }
+    });
+    dutiesEl.appendChild(b);
+  });
+
+  function renderPanel() {
+    const d = duties[cur];
+    panel.innerHTML =
+      '<h3>' + d.t + '</h3><p class="jd">' + d.jd + '</p>' +
+      '<ul class="ev">' + d.ev.map(e =>
+        '<li class="' + (active.has(e.lv) ? "" : "dim") + '"><span class="src">' + e.src + '</span><span class="lv" data-lv="' + e.lv + '">' + LV[e.lv] + '</span><span class="txt">' + e.txt + '</span></li>'
+      ).join("") + '</ul>' +
+      '<div class="bring"><div class="yes"><b>能帶來的</b>' + d.yes + '</div><div class="gap"><b>還要學的</b>' + d.gap + '</div></div>';
+    panel.setAttribute("aria-labelledby", "duty-" + cur);
+  }
+  function selectDuty(i, focus) {
+    cur = i;
+    [...dutiesEl.children].forEach((b, j) => { b.setAttribute("aria-selected", j === i); b.tabIndex = j === i ? 0 : -1; });
+    if (focus) dutiesEl.children[i].focus();
+    renderPanel();
+  }
+  document.querySelectorAll(".legend button").forEach(b => {
+    b.addEventListener("click", () => {
+      const f = b.dataset.f, on = b.getAttribute("aria-pressed") === "true";
+      if (on && active.size === 1) return;
+      b.setAttribute("aria-pressed", !on);
+      on ? active.delete(f) : active.add(f);
+      renderPanel();
+    });
+  });
+  selectDuty(0);
+
+  // ---------- 營運流程 ----------
+  const stepsEl = document.getElementById("steps");
+  const bar = document.getElementById("bar");
+  const body = document.getElementById("stepbody");
+  let s = 0;
+  steps.forEach((st, i) => {
+    const b = document.createElement("button");
+    b.type = "button"; b.className = "step"; b.setAttribute("role", "tab"); b.id = "step-" + i;
+    b.innerHTML = '<span class="c">' + (i + 1) + '</span><span class="l">' + st.l + '</span>';
+    b.addEventListener("click", () => go(i));
+    stepsEl.appendChild(b);
+  });
+  function go(i, focus) {
+    s = Math.max(0, Math.min(steps.length - 1, i));
+    const btns = stepsEl.querySelectorAll(".step");
+    btns.forEach((b, j) => {
+      b.setAttribute("aria-selected", j === s); b.tabIndex = j === s ? 0 : -1;
+      b.classList.toggle("done", j < s);
+    });
+    bar.style.width = (80 * s / (steps.length - 1)) + "%";
+    const st = steps[s];
+    body.innerHTML = '<div><h3>' + st.h + '</h3><p class="q">' + st.q + '</p></div><ul>' + st.li.map(x => '<li>' + x + '</li>').join("") + '</ul>';
+    body.setAttribute("aria-labelledby", "step-" + s);
+    document.getElementById("prev").disabled = s === 0;
+    document.getElementById("next").textContent = s === steps.length - 1 ? "回到第一步" : "下一步";
+    if (focus) btns[s].focus();
+  }
+  stepsEl.addEventListener("keydown", e => {
+    if (e.key === "ArrowRight") { e.preventDefault(); go(s + 1, true); }
+    if (e.key === "ArrowLeft") { e.preventDefault(); go(s - 1, true); }
+  });
+  document.getElementById("prev").addEventListener("click", () => go(s - 1));
+  document.getElementById("next").addEventListener("click", () => go(s === steps.length - 1 ? 0 : s + 1));
+  go(0);
+
+  // 開場循環圖節點 → 跳到對應步驟
+  document.querySelectorAll(".loop .node").forEach(n => {
+    const act = () => { go(+n.dataset.step); document.getElementById("flow").scrollIntoView(); };
+    n.addEventListener("click", act);
+    n.addEventListener("keydown", e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); act(); } });
+  });
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    const r = document.querySelector(".loop .runner"); if (r) r.remove();
+  }
+
+  // ---------- 提案時程 ----------
+  const seg = document.getElementById("seg");
+  const phase = document.getElementById("phase");
+  function showPhase(i) {
+    seg.querySelectorAll("button").forEach((b, j) => b.setAttribute("aria-selected", j === i));
+    const p = phases[i];
+    phase.innerHTML = '<h4>' + p.h + '</h4><ul>' + p.li.map(x => '<li>' + x + '</li>').join("") + '</ul><p class="role">' + p.role + '</p>';
+  }
+  seg.querySelectorAll("button").forEach(b => b.addEventListener("click", () => showPhase(+b.dataset.p)));
+  showPhase(0);
+
+  // ---------- 導覽列目前位置 ----------
+  const links = [...document.querySelectorAll(".nav ul a")];
+  const secs = links.map(a => document.querySelector(a.getAttribute("href")));
+  if ("IntersectionObserver" in window) {
+    const io = new IntersectionObserver(es => {
+      es.forEach(e => { if (e.isIntersecting) links.forEach(a => a.classList.toggle("on", a.getAttribute("href") === "#" + e.target.id)); });
+    }, { rootMargin: "-45% 0px -50% 0px" });
+    secs.forEach(x => x && io.observe(x));
+  }
+
+  // ---------- 複製 ----------
+  const toast = document.getElementById("toast");
+  let tt;
+  function say(msg) { toast.textContent = msg; toast.classList.add("show"); clearTimeout(tt); tt = setTimeout(() => toast.classList.remove("show"), 1800); }
+  document.querySelectorAll(".copy").forEach(b => b.addEventListener("click", async () => {
+    try { await navigator.clipboard.writeText(b.dataset.copy); say("已複製：" + b.dataset.copy); }
+    catch (e) { say("無法自動複製，請直接選取文字"); }
+  }));
+})();
+</script>
+</body>
+</html>
